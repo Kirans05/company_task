@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Register Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#">Register Page</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="../html/Login.html">Login</a>
+            <a class="nav-link" href="../html/Register.html">Register</a>
+        </div>
+        </div>
+    </div>
+</nav>
+<br />
+<br />
+<br />
+<div class="container">
+  <div class="form-group">
+    <label for="exampleInputEmail1">User Name</label> &nbsp; &nbsp;<span class="text-danger" id="nameErr">*</span>
+    <input type="text" class="form-control" id="exampleInputname1" aria-describedby="emailHelp" placeholder="Enter User Name" name="username" >
+  </div>
+  <br />
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label> &nbsp; &nbsp;<span class="text-danger" id="emailErr">*</span>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email" >
+  </div>
+  <br />
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label> &nbsp; &nbsp;<span class="text-danger" id="passwordErr">*</span>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password" >
+  </div>
+  <br />
+  <div class="form-group">
+    <label for="exampleInputPassword1">Confirm Password</label> &nbsp; &nbsp;<span class="text-danger" id="confirmPasswordErr">*</span>
+    <input type="password" class="form-control" id="exampleInputConfirmPassword1" placeholder="Confirm Password" name="Cpassword" >
+  </div>
+  <br />
+  <button type="submit" class="btn btn-primary" onclick="submitHandler()">Submit</button>
+  <br />
+  <br />
+  <p class="text-danger" id="mainErr"></p>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="../JS/Register.js"></script>
+  </body>
+</html>
